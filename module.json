@@ -2,7 +2,7 @@
   "id": "Use-PC-Sheet-for-NPCs",
   "title": "Use PC Sheet for NPCs",
   "description": "Makes NPC sheets look like PC character sheets in PF2e",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "compatibility": {
     "minimum": "13",
     "verified": "13"
