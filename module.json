@@ -1,0 +1,23 @@
+{
+  "id": "Use PC Sheet for NPCs",
+  "title": "Use PC Sheet for NPCs",
+  "description": "Makes NPC sheets look like PC character sheets in PF2e",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "systems": ["pf2e"],
+  "esmodules": ["scripts/npc-pc-sheet.js"],
+  "authors": [
+    {
+      "name": "DMBrewCrew",
+      "url": "https://github.com/DMBrewCrew"
+    }
+  ],
+  "url": "https://github.com/DMBrewCrew/Use-PC-Sheet-for-NPCs/",
+  "manifest": "https://github.com/DMBrewCrew/Use-PC-Sheet-for-NPCs/releases/latest/download/module.json",
+  "download": "https://github.com/DMBrewCrew/Use-PC-Sheet-for-NPCs/releases/latest/download/NPC-as-PC-Sheet.zip",
+  "bugs": "https://github.com/DMBrewCrew/Use-PC-Sheet-for-NPCs/issues",
+  "changelog": "https://github.com/DMBrewCrew/Use-PC-Sheet-for-NPCs/releases"
+}
