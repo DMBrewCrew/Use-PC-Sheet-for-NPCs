@@ -1,0 +1,46 @@
+name: Create Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version number (e.g., 1.0.0)'
+        required: true
+        type: string
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Delete existing latest tag
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -d latest || true
+          git push origin :refs/tags/latest || true
+        continue-on-error: true
+      
+      - name: Create zip of code
+        run: |
+          zip -r Use-PC-Sheet-for-NPCs.zip . -x "*.git*" "*.github*"
+      
+      - name: Create latest release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: latest
+          name: "Release v${{ github.event.inputs.version }}"
+          draft: false
+          prerelease: false
+          make_latest: true
+          body: "Release version ${{ github.event.inputs.version }}"
+          files: |
+            Use-PC-Sheet-for-NPCs.zip
+            module.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
