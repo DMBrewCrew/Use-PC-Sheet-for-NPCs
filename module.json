@@ -1,5 +1,5 @@
 {
-  "id": "Use_PC_Sheet_for_NPCs",
+  "id": "Use-PC-Sheet-for-NPCs",
   "title": "Use PC Sheet for NPCs",
   "description": "Makes NPC sheets look like PC character sheets in PF2e",
   "version": "1.0.0",
@@ -17,7 +17,7 @@
   ],
   "url": "https://github.com/DMBrewCrew/Use-PC-Sheet-for-NPCs/",
   "manifest": "https://github.com/DMBrewCrew/Use-PC-Sheet-for-NPCs/releases/latest/download/module.json",
-  "download": "https://github.com/DMBrewCrew/Use-PC-Sheet-for-NPCs/releases/latest/download/NPC-as-PC-Sheet.zip",
+  "download": "https://github.com/DMBrewCrew/Use-PC-Sheet-for-NPCs/releases/latest/download/Use-PC-Sheet-for-NPCs.zip",
   "bugs": "https://github.com/DMBrewCrew/Use-PC-Sheet-for-NPCs/issues",
   "changelog": "https://github.com/DMBrewCrew/Use-PC-Sheet-for-NPCs/releases"
 }
